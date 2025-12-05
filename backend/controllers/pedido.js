@@ -48,7 +48,7 @@ export const crearPedido = async (req, res) => {
 
         await nuevoPedido.save();
         
-        console.log("✅ Pedido guardado:", nuevoPedido._id);
+        console.log("Pedido guardado:", nuevoPedido._id);
         
         res.status(201).json({ 
             success: true,
@@ -57,7 +57,7 @@ export const crearPedido = async (req, res) => {
         });
 
     } catch (error) {
-        console.error("❌ Error al guardar pedido:", error);
+        console.error("Error al guardar pedido:", error);
         res.status(500).json({ 
             success: false,
             message: "Error al guardar pedido",
