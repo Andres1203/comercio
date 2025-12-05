@@ -1,6 +1,6 @@
 // carrito.js - Controlador del carrito de compras
 
-const API_URL = 'http://localhost:8081/api';
+const API_URL = 'https://ecomercej.onrender.com/api';
 
 // Cargar carrito al inicio
 document.addEventListener('DOMContentLoaded', () => {
@@ -92,7 +92,7 @@ function cargarCarrito() {
                             +
                         </button>
                         <button onclick="eliminarProducto('${producto.productID}')" 
-                                class="ml-auto text-red-500 hover:text-red-700 font-semibold transition-colors">
+                                class="ml-auto rounded-2xl text-red-500 hover:text-white hover:bg-red-500 hover:rounded-2xl hover:font-normal hover: px-3 hover: py-1 font-semibold transition-colors">
                             Eliminar
                         </button>
                     </div>
@@ -101,7 +101,7 @@ function cargarCarrito() {
         `).join('')}
         
         <button onclick="vaciarCarrito()" 
-                class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-xl transition-all duration-300 mt-4">
+                class="w-full bg-linear-to-r from-blue-600 to-purple-600 hover:bg-red-600 text-white font-semibold py-3 rounded-xl transition-all duration-300 mt-4">
             Vaciar Carrito
         </button>
     `;

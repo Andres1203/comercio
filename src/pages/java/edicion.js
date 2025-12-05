@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Cargar datos actuales del usuario
     try {
-        const res = await fetch("http://localhost:8081/api/perfil/obtener", {
+        const res = await fetch("https://ecomercej.onrender.com/api/perfil/obtener", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: perfil.correo })
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
 
         try {
-            const res = await fetch("http://localhost:8081/api/perfil/actualizar", {
+            const res = await fetch("https://ecomercej.onrender.com/api/perfil/actualizar", {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
 
         try {
-            const res = await fetch("http://localhost:8081/api/perfil/eliminar", {
+            const res = await fetch("https://ecomercej.onrender.com/api/perfil/eliminar", {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email: perfil.correo })

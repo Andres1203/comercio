@@ -3,7 +3,7 @@
 // Crear función de cargar productos
 async function cargarProductos() {
     try {
-        const response = await fetch('http://localhost:8081/api/productos');
+        const response = await fetch('https://ecomercej.onrender.com/api/productos');
 
         if (!response.ok) {
             throw new Error(`Error HTTP: ${response.status}`);
