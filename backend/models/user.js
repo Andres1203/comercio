@@ -52,4 +52,3 @@ const User = mongoose.model("user", UserSchema, "user");
 
 export default User;
 
-
